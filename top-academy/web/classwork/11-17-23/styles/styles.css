@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+.container {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__logo--icon {
+    background-color: #174FA7;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.header__logo--brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #174FA7;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.nav__links {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__links--link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #140C44;
+    text-decoration: none;
+}
+
+.nav__btn {
+    padding: 8px 32px;
+    border: solid #174FA7 2px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #174FA7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background: url("./../assets/1bg.png") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    width: 500px;
+    z-index: 1001;
+}
+
+.intro__heading {
+    color: #140C44;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.intro__subtitle {
+    color: rgba(20, 12, 68, 0.71);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.intro__nav {
+    margin-top: 40px;
+}
+
+.intro__nav--btn {
+    background: linear-gradient(97deg, #174FA7 21.87%, #337AEB 93.07%);
+    text-decoration: none;
+    padding: 17px 38px;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.intro__nav--link {
+    border: solid #174FA7 2px;
+    color: #174FA7;
+    padding: 17px 38px;
+    height: 56px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+
+
+
+.recomended {
+
+}
+
+.recomended__inner {
+    background-color: #FAFAFA;
+}

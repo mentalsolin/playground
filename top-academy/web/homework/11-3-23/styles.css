@@ -1,0 +1,70 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    color: #201d1f;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.mgtp200 {
+    margin-top: 200px;
+}
+
+/* Задание 1 */
+
+.zadanie1 h1 {
+    text-align: center;
+    color: #463b8b;
+}
+
+.zadanie1 h2 {
+    color: #7c8999;
+}
+
+
+/* Задание 2 */
+
+.zadanie2 h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.zadanie2 .cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zadanie2 .card {
+    background-color: #e0e0e0;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+.zadanie2 .red {
+    color: #201d1f;
+}
+
+.zadanie2 .black {
+    color: #950000;
+}
+
+
+/* Задание 3 */
+
+.zadanie3 h1 {
+    text-align: center;
+}
+
+.zadanie3 h2 {
+    text-align: center;
+}
+
+.zadanie3 a {
+    background-color: #e0e0e0;
+    color: rgb(99, 170, 146);
+    text-decoration: none;
+}

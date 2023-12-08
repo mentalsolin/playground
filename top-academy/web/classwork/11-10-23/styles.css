@@ -1,0 +1,57 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.zadanie1 body {
+    margin: 0;
+    background: url("./bg.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: justify;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.zadanie1 .img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.zadanie1 p {
+    background-color: rgba(255, 255, 255, 0.398);
+    padding: 10px;
+}
+
+.zadanie2-body {
+    margin: 30px;
+    background-color: #f5f5f5;
+}
+
+
+
+
+.zadanie2 p {
+    
+}
+
+.zadanie2 .table {
+    padding: 20px;
+    width: 350px;
+    border: solid 2px #dadada;
+    background-color: #eaeaea;
+}
+
+
+
+
+.table3 {
+    border: solid 1px #000;
+}
+
+.img2 {
+    width: 50px;
+}
