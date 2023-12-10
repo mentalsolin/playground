@@ -2,4 +2,7 @@
 
 ## Web
 
-- [Using \<ul\> \<li\> \<a\> for navigation instead of \<div\> \<a\>](./1/index.html)
+- [Исмпользование конструкции \<ul\> \<li\> \<a\> для навигации вместо \<div\> \<a\>](./1/index.html)
+
+## C++
+- [Регистрация с хешированием пароля](./password-hash/)
