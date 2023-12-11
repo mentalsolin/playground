@@ -1,6 +1,7 @@
 *.pdf
 *.zip
 .temp
+*.7z
 
 # Visual Studio
 

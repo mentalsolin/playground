@@ -1,0 +1,61 @@
+.page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page__body {
+    margin: 0;
+    background-color: #f5f5f5
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+
+.table {
+    margin: 30px 0;
+    width: 100%;
+}
+
+.table__item {
+    background-color: bisque;
+    width: 100%
+}
+
+.table__item--title {
+
+}
+
+
+.todo {
+
+}
+
+.todo__remove {
+
+}
+
+.check {
+    padding-left: 60px;
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: url('./images/unchecked_16.png') no-repeat;
+    margin-left: -30px;
+    vertical-align: baseline;
+}
