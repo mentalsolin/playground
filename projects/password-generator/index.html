@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Password Generator</title>
+</head>
+<body class="page__body">
+    <a href="https://github.com/mentalsolin/playground/tree/master/projects/password-generator/">
+        <img class="github" src="./assets/github-corner-right.svg">
+    </a>
+    <main class="app container">
+        <h1 class="app__title">Password Generator</h1>
+        <div class="app__password">
+            <div class="password">
+                <input class="password__field" id="passwordField" type="text">
+                <button class="password__toggle button" onclick="toggle()"><img id="toggleIcon" src="./assets/hide.svg" alt="Hide"></button>
+            </div>
+            <button class="app__password--recreate button" onclick="createPassword()" id="recreate"><img src="./assets/recreate.svg" alt="Recreate"></button>
+            <button class="app__password--clipboard button" onclick="addToClipboard()"><img id="clipboardIcon" src="./assets/clipboard.svg" alt="Clipboard"></button>
+        </div>
+        <div class="app__password-quality">
+            <div class="app__password-quality--bar" id="entropyBar"></div>
+        </div>
+        <div class="app__info">
+            <p class="app__info--quality" id="entropyQuality">Password Quility: -</p>
+            <p class="app__info--entropy" id="entropyScore">Entropy: - bit</p>
+        </div>
+        <div class="app__range">
+            <input class="app__range--slider" id="length" type="range" value="20" min="1" max="128">
+            <input class="app__range--set" id="lengthBox" type="number">
+        </div>
+        <h2 class="app__character-title">Character Types</h2>
+        <ul class="characters">
+            <li class="characters__item">
+                <input class="characters__item--check" id="upperCaseCheck" type="checkbox" checked>
+                <label class="characters__item--toggle" for="upperCaseCheck"></label>
+                <p class="characters__item--title">A-Z</p>
+            </li>
+            <li class="characters__item">
+                <input class="characters__item--check" id="lowerCaseCheck" type="checkbox" checked>
+                <label class="characters__item--toggle" for="lowerCaseCheck"></label>
+                <p class="characters__item--title">a-z</p>
+            </li>
+            <li class="characters__item">
+                <input class="characters__item--check" id="numbersCheck" type="checkbox" checked>
+                <label class="characters__item--toggle" for="numbersCheck"></label>
+                <p class="characters__item--title">0-9</p>
+            </li>
+            <li class="characters__item">
+                <input class="characters__item--check" id="specialCheck" type="checkbox" checked>
+                <label class="characters__item--toggle" for="specialCheck"></label>
+                <p class="characters__item--title">/ * + & &hellip;</p>
+            </li>
+            <li class="characters__item">
+                <input class="characters__item--check" id="asciiCheck" type="checkbox">
+                <label class="characters__item--toggle" for="asciiCheck"></label>
+                <p class="characters__item--title">Extended ASCII</p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>Coded by <a href="https://solin.me">mentalsolin</a></p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

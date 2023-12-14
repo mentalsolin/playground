@@ -58,6 +58,14 @@
     background-color: var(--bg-hover);
 }
 
+.disabled {
+    cursor: not-allowed;
+}
+
+.disabled img {
+    opacity: 0.2;
+}
+
 h1, h2, p {
     margin: 0;
 }
@@ -100,6 +108,13 @@ ul, li {
     width: 650px;
     max-width: 100%;
     border-radius: 15px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: inherit;
+    font-variant-ligatures: none;
+    line-height: 20px;
+    padding: 10px 54px 10px 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .password__toggle {
@@ -122,12 +137,13 @@ ul, li {
 }
 
 .app__password-quality--bar {
-    width: 50%;
+    width: 0%;
     background-color: var(--quality-excellent);
     max-width: 100%;
     border: none;
     border-radius: 3px;
     height: 6px;
+    transition: background-color 0.2s ease, width 0.2s ease;
 }
 
 
@@ -163,6 +179,9 @@ ul, li {
     border: none;
     border-radius: 15px;
     background-color: var(--bg-secondary);
+    padding-left: 14px;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 
@@ -208,4 +227,28 @@ ul, li {
 .characters__item--title {
     padding: 10px 20px;
     border-radius: 15px;
+    transition: background-color ease 0.2s,color ease 0.2s;
+}
+
+
+
+
+.github {
+    position: absolute;
+    top: 0;
+    right: 0;
+    filter: invert();
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+}
+
+footer p {
+    color: #9d9d9d;
+}
+
+footer p a {
+    color: #9d9d9d;
 }
