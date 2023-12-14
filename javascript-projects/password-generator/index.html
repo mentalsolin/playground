@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Password Generator</title>
+</head>
+<body class="page__body">
+    <main class="app container">
+        <h1 class="app__title">Password Generator</h1>
+        <div class="app__password">
+            <div class="password">
+                <input class="password__field" type="text">
+                <button class="password__toggle button"><img src="./assets/hide.svg" alt="Hide"></button>
+            </div>
+            <button class="app__password--recreate button"><img src="./assets/recreate.svg" alt="Recreate"></button>
+            <button class="app__password--clipboard button"><img src="./assets/clipboard.svg" alt="Clipboard"></button>
+        </div>
+        <div class="app__password-quality">
+            <div class="app__password-quality--bar"></div>
+        </div>
+        <div class="app__info">
+            <p class="app__info--quality">Password Quility: Excellent</p>
+            <p class="app__info--entropy">Entropy: 900 bit</p>
+        </div>
+        <div class="app__range">
+            <input class="app__range--slider" type="range" value="20" min="1" max="128">
+            <input class="app__range--set" type="number">
+        </div>
+        <h2 class="app__character-title">Character Types</h2>
+        <ul class="characters">
+            <li class="characters__item">
+                <input class="characters__item--check" id="1" type="checkbox">
+                <label class="characters__item--toggle" for="1"></label>
+                <p class="characters__item--title">A-Z</p>
+            </li>
+            <li class="characters__item">
+                <input class="characters__item--check" id="2" type="checkbox">
+                <label class="characters__item--toggle" for="2"></label>
+                <p class="characters__item--title">a-z</p>
+            </li>
+            <li class="characters__item">
+                <input class="characters__item--check" id="3" type="checkbox">
+                <label class="characters__item--toggle" for="3"></label>
+                <p class="characters__item--title">0-9</p>
+            </li>
+            <li class="characters__item">
+                <input class="characters__item--check" id="4" type="checkbox">
+                <label class="characters__item--toggle" for="4"></label>
+                <p class="characters__item--title">/ * + & &hellip;</p>
+            </li>
+            <li class="characters__item">
+                <input class="characters__item--check" id="5" type="checkbox">
+                <label class="characters__item--toggle" for="5"></label>
+                <p class="characters__item--title">Extended ASCII</p>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,211 @@
+:root {
+    --bg-primary: #fff;
+    --bg-secondary: #E9E9E9;
+    --bg-hover:#dcdcdc;
+
+    --text-primary: #212121;
+
+    --ui-color: #1f79ee;
+
+    --quality-poor: #d04b4b;
+    --quality-weak: #ce773d;
+    --quality-good: #9dbf4f;
+    --quality-excellent: #6cb840;
+}
+
+.page {
+    box-sizing: border-box;
+    font-size: 16px;
+    user-select: none;
+}
+
+.page__body {
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: var(--text-primary);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 810px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: var(--bg-secondary);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: var(--bg-hover);
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.app {
+
+}
+
+.app__title {
+    margin-bottom: 80px;
+}
+
+.app__password {
+    display: flex;
+    column-gap: 10px;
+}
+
+.app__password--recreate {
+
+}
+
+.app__password--clipboard {
+
+}
+
+.password {
+    position: relative;
+}
+
+.password__field {
+    border: none;
+    background-color: var(--bg-secondary);
+    height: 40px;
+    width: 650px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.password__toggle {
+    position: absolute;
+    border: none;
+    background: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.app__password-quality {
+    width: 650px;
+    background-color: var(--bg-secondary);
+    max-width: 100%;
+    border: none;
+    border-radius: 3px;
+    height: 6px;
+    margin: 10px 0;
+}
+
+.app__password-quality--bar {
+    width: 50%;
+    background-color: var(--quality-excellent);
+    max-width: 100%;
+    border: none;
+    border-radius: 3px;
+    height: 6px;
+}
+
+
+
+.app__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.app__info--quality {
+
+}
+
+.app__info--entropy {
+
+}
+
+
+.app__range {
+    display: flex;
+    column-gap: 10px;
+}
+
+.app__range--slider {
+    width: 580px;
+    max-width: 100%;
+    margin: 0;
+}
+.app__range--set {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--bg-secondary);
+}
+
+
+.app__character-title {
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: 10px;
+}
+
+.characters {
+    display: flex;
+    column-gap: 10px;
+}
+
+.characters__item {
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    border-radius: 15px;
+}
+
+.characters__item input[type=checkbox]:checked + .characters__item--toggle + .characters__item--title {
+    background-color: var(--ui-color);
+    color: #fff;
+}
+
+.characters__item--check {
+    display: none;
+}
+
+.characters__item--toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.characters__item--title {
+    padding: 10px 20px;
+    border-radius: 15px;
+}
