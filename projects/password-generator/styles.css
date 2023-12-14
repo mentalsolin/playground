@@ -62,6 +62,10 @@
     cursor: not-allowed;
 }
 
+.disabled:hover {
+    background-color: var(--bg-secondary);
+}
+
 .disabled img {
     opacity: 0.2;
 }
@@ -76,9 +80,6 @@ ul, li {
     list-style-type: none;
 }
 
-.app {
-
-}
 
 .app__title {
     margin-bottom: 80px;
@@ -89,13 +90,54 @@ ul, li {
     column-gap: 10px;
 }
 
-.app__password--recreate {
-
+.app__password-quality {
+    width: 650px;
+    background-color: var(--bg-secondary);
+    max-width: 100%;
+    border: none;
+    border-radius: 3px;
+    height: 6px;
+    margin: 10px 0;
 }
 
-.app__password--clipboard {
-
+.app__password-quality--bar {
+    width: 0%;
+    background-color: var(--quality-excellent);
+    max-width: 100%;
+    border: none;
+    border-radius: 3px;
+    height: 6px;
+    transition: background-color 0.2s ease, width 0.2s ease;
 }
+
+
+.app__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.app__range {
+    display: flex;
+    column-gap: 10px;
+}
+
+.app__range--slider {
+    width: 580px;
+    max-width: 100%;
+    margin: 0;
+}
+.app__range--set {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--bg-secondary);
+    padding-left: 14px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
 
 .password {
     position: relative;
@@ -124,64 +166,6 @@ ul, li {
     top: 0;
     right: 0;
     bottom: 0;
-}
-
-.app__password-quality {
-    width: 650px;
-    background-color: var(--bg-secondary);
-    max-width: 100%;
-    border: none;
-    border-radius: 3px;
-    height: 6px;
-    margin: 10px 0;
-}
-
-.app__password-quality--bar {
-    width: 0%;
-    background-color: var(--quality-excellent);
-    max-width: 100%;
-    border: none;
-    border-radius: 3px;
-    height: 6px;
-    transition: background-color 0.2s ease, width 0.2s ease;
-}
-
-
-
-.app__info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.app__info--quality {
-
-}
-
-.app__info--entropy {
-
-}
-
-
-.app__range {
-    display: flex;
-    column-gap: 10px;
-}
-
-.app__range--slider {
-    width: 580px;
-    max-width: 100%;
-    margin: 0;
-}
-.app__range--set {
-    width: 160px;
-    height: 40px;
-    border: none;
-    border-radius: 15px;
-    background-color: var(--bg-secondary);
-    padding-left: 14px;
-    font-family: inherit;
-    font-size: inherit;
 }
 
 
@@ -231,13 +215,10 @@ ul, li {
 }
 
 
-
-
 .github {
     position: absolute;
     top: 0;
     right: 0;
-    filter: invert();
 }
 
 footer {

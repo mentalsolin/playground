@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="ru" class="page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles.css">
 
-    <title>Password Generator</title>
+    <title>Генератор паролей</title>
 </head>
 <body class="page__body">
     <a href="https://github.com/mentalsolin/playground/tree/master/projects/password-generator/">
-        <img class="github" src="./assets/github-corner-right.svg">
+        <img class="github" src="../github-corner.svg">
     </a>
     <main class="app container">
-        <h1 class="app__title">Password Generator</h1>
+        <h1 class="app__title">Генератор паролей</h1>
         <div class="app__password">
             <div class="password">
-                <input class="password__field" id="passwordField" type="text">
-                <button class="password__toggle button" onclick="toggle()"><img id="toggleIcon" src="./assets/hide.svg" alt="Hide"></button>
+                <input class="password__field" id="passwordField" type="password">
+                <button class="password__toggle button" onclick="toggle()" aria-label="test"><img id="toggleIcon" src="./assets/hide.svg" alt="Скрыть"></button>
             </div>
-            <button class="app__password--recreate button" onclick="createPassword()" id="recreate"><img src="./assets/recreate.svg" alt="Recreate"></button>
-            <button class="app__password--clipboard button" onclick="addToClipboard()"><img id="clipboardIcon" src="./assets/clipboard.svg" alt="Clipboard"></button>
+            <button class="app__password--recreate button" onclick="createPassword()" id="recreate"><img src="./assets/recreate.svg" alt="Пересоздать"></button>
+            <button class="app__password--clipboard button" onclick="addToClipboard()"><img id="clipboardIcon" src="./assets/clipboard.svg" alt="Скопировать"></button>
         </div>
         <div class="app__password-quality">
             <div class="app__password-quality--bar" id="entropyBar"></div>
         </div>
         <div class="app__info">
-            <p class="app__info--quality" id="entropyQuality">Password Quility: -</p>
-            <p class="app__info--entropy" id="entropyScore">Entropy: - bit</p>
+            <p class="app__info--quality" id="entropyQuality">Надежность пароля: -</p>
+            <p class="app__info--entropy" id="entropyScore">Энтропия: - bit</p>
         </div>
         <div class="app__range">
             <input class="app__range--slider" id="length" type="range" value="20" min="1" max="128">
             <input class="app__range--set" id="lengthBox" type="number">
         </div>
-        <h2 class="app__character-title">Character Types</h2>
+        <h2 class="app__character-title">Варианты символов</h2>
         <ul class="characters">
             <li class="characters__item">
                 <input class="characters__item--check" id="upperCaseCheck" type="checkbox" checked>
@@ -58,7 +58,7 @@
             <li class="characters__item">
                 <input class="characters__item--check" id="asciiCheck" type="checkbox">
                 <label class="characters__item--toggle" for="asciiCheck"></label>
-                <p class="characters__item--title">Extended ASCII</p>
+                <p class="characters__item--title">Расширенная ASCII</p>
             </li>
         </ul>
     </main>
