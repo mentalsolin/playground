@@ -1,0 +1,213 @@
+.page {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page__body {
+    margin: 0;
+    background-color: #212121;
+    color: #fff;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+ul, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+} 
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.header {
+    
+}
+
+.header__nav {
+    margin-top: 62px;
+    
+}
+
+.nav {
+
+}
+
+.nav__left {
+    float: left;
+}
+
+.nav__right {
+    float: right;
+}
+
+.nav__item {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__item--link {
+}
+
+
+
+.main {
+
+}
+
+.first-screen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-screen__text {
+    width: 50%;
+    display: inline-block;
+}
+
+.first-screen__text--subtitle {
+    font-size: 30px;
+}
+
+.first-screen__text--title {
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.first-screen__text--desc {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+}
+
+.first-screen__text--link {
+    color: #fff;
+    padding: 17px 30px;
+    font-size: 16px;
+    background-color: #D7B399;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+
+
+.first-screen__image {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+.first-screen__image--last-price {
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.first-screen__image--price {
+    font-weight: 700;
+    font-size: 42px;
+    color: #D84033;
+}
+
+
+
+.free-shiping {
+    padding: 60px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.free-shiping__title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.free-shiping__title--span {
+    font-weight: 400;
+}
+
+.free-shiping__subtitle {
+    font-weight: 300;
+    font-size: 21px;
+}
+
+
+.subcribe {
+
+}
+
+.subcribe__container {
+    display: grid;
+    grid-template-columns: 2fr max-content max-content;
+    align-items: center;
+}
+
+.subcribe__title {
+    
+}
+
+.subcribe__email {
+    width: 255px;
+    height: 40px;
+    margin-right: 40px;
+    border: none;
+    color: #fff;
+    background-color: #212121;
+    border: 1px solid #fff;
+    padding: 0 20px;
+}
+
+.subcribe__email:focus {
+    outline: none;
+}
+
+.subcribe__email::placeholder {
+    color: #fff;
+}
+
+.subcribe__link {
+    height: 40px;
+    color: #fff;
+    padding: 12px 35px;
+    background-color: #D7B399;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: right;
+}
+
+.footer__container {
+    width: 700px;
+    max-width: 100%;
+}
+
+.links {
+}
+
+.links__item {
+}
+
+.links__item--title {
+
+}
+
+.links__item--link {
+
+}
