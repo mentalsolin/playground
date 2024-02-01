@@ -1,0 +1,132 @@
+@keyframes cloud {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 1883px;
+    }
+}
+
+*, *::before, ::after {
+    box-sizing: border-box;
+}
+
+.body1 {
+    background-color: rgb(148, 157, 174);
+    margin: 50px;
+    font-size: 60px;
+    height: 240px;
+    animation: cloud 1s linear infinite;
+    background-image: url('../images/cloud.png');
+    background-repeat: repeat-x;
+}
+
+.myBorder {
+    border: 5px solid #000;
+    padding: 50px;
+}
+
+.myBorder:last-child {
+    margin-bottom: 50px;
+}
+
+.spanBorder {
+    border: 5px solid #000;
+    padding: 50px;
+    display: block;
+}
+
+.barbie {
+    border-color: hotpink;
+    border-width: 50px;
+    margin-top: 20px;
+}
+
+.progressbar {
+    height: 80px;
+    background-color: rgb(148, 157, 174);
+    border: 5px solid #000;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+.progressbar__bar {
+    width: 700px;
+    height: 100%;
+    background-color: black;
+    border: 1px solid #000;
+    animation: barin 4s ease-in-out infinite;
+    border-radius: 50px;
+}
+
+
+@keyframes barin {
+    0% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(1400px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+
+.fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2000px;
+}
+
+.fav__hrt {
+    animation: fav 4s ease-in-out infinite;
+}
+
+@keyframes fav {
+    0% {
+        transform: scale(0)
+    }
+    50% {
+        transform: scale(1.8)
+    }
+    100% {
+        transform: scale(0)
+    }
+}
+
+
+
+.body2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.two-header {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+}
+
+.icons {
+
+}
+
+.icons-calc {
+    transform: rotate(-25deg);
+}
+.icons-book {
+    transform: rotate(-10deg);
+    transform: translateY(20px);
+}
+.icons-paper {
+    transform: rotate(10deg);
+    transform: translateY(20px);
+}
+.icons-pallete {
+    transform: rotate(25deg);
+}
+.icons-pencil {
+
+}
