@@ -1,0 +1,35 @@
+body {
+    background-color: #000;
+    box-sizing: border-box;
+    margin: 0;
+    color: #fff;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 30px;
+}
+
+button {
+    height: 30px;
+}
